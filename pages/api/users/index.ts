@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-import { sampleUserData } from '../../../utils/sample-data'
+import {NextApiRequest, NextApiResponse} from 'next'
+import {sampleUserData} from '../../../utils/sample-data'
 
 export default (_: NextApiRequest, res: NextApiResponse) => {
   try {
@@ -9,6 +9,6 @@ export default (_: NextApiRequest, res: NextApiResponse) => {
 
     res.status(200).json(sampleUserData)
   } catch (err) {
-    res.status(500).json({ statusCode: 500, message: err.message })
+    res.status(500).json({statusCode: 500, message: err.message})
   }
 }
