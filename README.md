@@ -60,3 +60,27 @@ When we run `next dev` the next time, Next.js will start looking for any `.ts` o
 Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
 
 A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+
+## Production
+
+```
+# build
+npm run build
+
+# run 
+npm start
+```
+
+## Deploy to integration [HEROKU]
+
+### Getting started with Heroku
+```
+heroku login
+heroku create <app name>
+git add .
+git commit -m 'deploy to heroku'
+git push heroku master
+
+Test at: <app name>.herokuapp.com
+Log view: heroku logs -t
+```
