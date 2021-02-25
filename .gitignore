@@ -7,3 +7,6 @@ node_modules
 logs
 *.env
 cache
+
+# uncomment if you want
+dist

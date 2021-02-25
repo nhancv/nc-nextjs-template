@@ -5,7 +5,9 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start -p 3001",
-    "type-check": "tsc"
+    "start:heroku": "next start -p $PORT",
+    "type-check": "tsc",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "isomorphic-unfetch": "3.0.0",
@@ -19,5 +21,6 @@
     "@types/react-dom": "^17.0.1",
     "typescript": "3.7.3"
   },
+  "cacheDirectories": ["dist/cache"],
   "license": "ISC"
 }
