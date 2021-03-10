@@ -21,6 +21,10 @@
     "@types/react-dom": "^17.0.1",
     "typescript": "3.7.3"
   },
+  "engines": {
+    "node": "15.x",
+    "npm": "7.x"
+  },
   "cacheDirectories": ["dist/cache"],
   "license": "ISC"
 }
