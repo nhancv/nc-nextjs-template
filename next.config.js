@@ -1,3 +1,16 @@
 module.exports = {
-    distDir: 'dist',
+  distDir: 'dist',
+  async headers() {
+    return [
+      {
+        source: '/(.*)?',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY'
+          }
+        ],
+      },
+    ];
+  },
 }
